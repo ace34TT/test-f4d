@@ -42,7 +42,7 @@ const HeroSection = () => {
         <div
 
 
-        className={isDarkTheme ? "bg-[#050A11] trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
+        className={isDarkTheme ? "bg-[#070917] trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
         >
           {isDarkTheme ? (
               <img src="/images/custom/strapi_next.png" className={"max-w-none w-56"} alt=""/>
