@@ -10,13 +10,13 @@ const Home = () => {
   const { isDarkTheme } = useTheme();
   return (
     <div
-      className={`pb-10  ${
+      className={` ${
         isDarkTheme
           ? "bg-gradient-to-b from-[#070b14] to-[#07071b] text-white"
           : "bg-white text-black"
       }`}
     >
-      <div className={"min-h-screen h-fit flex flex-col"}>
+      <div className={"min-h-screen h-fit flex flex-col pb-5"}>
         <HeroBgAnimation></HeroBgAnimation>
         <Navbar />
         <HeroSection />

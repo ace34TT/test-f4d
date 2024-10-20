@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
       <section
           id={"hero"}
-          className="z-10 flex-grow gap-5 w-full px-5 md:w-8/12 mx-auto flex flex-col items-center justify-center prose max-w-none"
+          className=" z-10 flex-grow gap-5 w-full px-5 md:w-8/12 mx-auto flex flex-col items-center justify-center prose max-w-none"
       >
         {/*{isDarkTheme ? (*/}
         {/*    <img*/}
@@ -31,13 +31,13 @@ const HeroSection = () => {
             className={
               "w-full" +
               isDarkTheme
-                  ? "text-4xl font-light text-white md:text-6xl text-center"
-                  : "text-4xl md:text-6xl font-light text-primary-950 text-center"
+                  ? "text-4xl font-light md:text-6xl text-center"
+                  : "text-4xl md:text-6xl font-light text-center"
             }
         >
-          <span className="font-bold">Solutions</span> de développement <br/>
-          <span className="font-bold">rapides</span> et{" "}
-          <span className="font-bold">flexibles</span> avec
+          <span className={"font-bold"}>Solutions</span> de développement <br/>
+          <span className={"font-bold"}>rapides</span> et{" "}
+          <span className={"font-bold"}>flexibles</span> avec
         </h1>
         <div
             className={isDarkTheme ? "bg-[#070917] trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
@@ -75,7 +75,7 @@ const HeroSection = () => {
           performances optimales et un SEO renforcé.
         </p>
         <button
-            className="bg-accent-600 hover:bg-accent-500 text-white font-semibold py-2 pl-6 pr-2 rounded-full flex items-center">
+            className="bg-accent-600 hover:bg-accent-500 text-white font-semibold py-2 pl-6 pr-2 rounded-full flex items-center ">
           Demander une démo
           <div className={" ml-4 p-4 rounded-full bg-white"}>
             <ImArrowUpRight2 className={"text-accent-600"}/>
