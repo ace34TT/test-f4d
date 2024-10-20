@@ -5,7 +5,8 @@ import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { useTheme } from "@/lib/ThemeContext";
 import IconOpenWhite from "./icons/IconOpenWhite";
 import IconCloseWhite from "./icons/IconCloseWhite";
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 const Navbar: FC = () => {
   const [activeLink, setActiveLink] = useState<string>("Services");
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -30,7 +31,7 @@ const Navbar: FC = () => {
         </div>
 
         <button className="md:hidden text-white" onClick={toggleMenu}>
-          {isMenuOpen ? <IconCloseWhite /> : <IconOpenWhite />}
+          {isMenuOpen ? <IoMdClose size={27} className={isDarkTheme ? "text-white" : "text-primary-950"} />: <GiHamburgerMenu size={27} className={isDarkTheme ? "text-white" : "text-primary-950"} />}
         </button>
       </div>
 

@@ -2,17 +2,24 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 
 interface AnimationConfig {
+  floating: {
+    y: string, // Small floating effect
+    duration: number, // Longer duration for smooth float
+    yoyo: boolean, // Reverse the animation to create floating
+    repeat: number, // Infinite loop
+    ease: string,
+  },
   toB: {
     x?: string;
     y?: string; // For vertical movement
-    rotation?: number; // Rotation in degrees
+    rotation?: number | string ; // Rotation in degrees
     duration: number; // Duration of the movement to B
     ease?: string; // Easing function
   };
   toA: {
     x?: string;
     y?: string; // For vertical movement
-    rotation?: number; // Rotation in degrees
+    rotation?: number | string ; // Rotation in degrees
     duration: number; // Duration of the return to A
     ease?: string; // Easing function
   };
