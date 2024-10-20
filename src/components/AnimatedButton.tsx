@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {useTheme} from "@/lib/ThemeContext";
+import Image from 'next/image';
 
 export default function AnimatedButton() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -22,13 +23,14 @@ export default function AnimatedButton() {
 
   return (
       <div
-          className={`trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border ${isDarkTheme ? "bg-[#070917]" : "bg-white"}`}
+          className={`trailing_border relative border-2 border-accent-700 px-10 md:px-28 w-fit rounded-2xl my-4 py-4 trailing-border ${isDarkTheme ? "bg-[#070917]" : "bg-white"}`}
       >
         {isDarkTheme ? (
-            <img src="/images/custom/strapi_next.png" className={"max-w-none w-56 lg:w-[400px]"} alt="" />
+            <img src="/images/custom/strapi_next.png" className={"max-w-none w-56 lg:w-[400px]"} alt="" loading="eager" />
         ) : (
-            <img src="/images/custom/light_strapi_next.png" className={"max-w-none w-56 lg:w-[400px]"} alt="" />
+            <img src="/images/custom/light_strapi_next.png" className={"max-w-none w-56 lg:w-[400px]"} alt="" loading="eager" />
         )}
+
         <motion.div
             className={"blur-md bg-accent-500 absolute top-0 left-0 h-full w-full border-2 border-accent-700 rounded-2xl"}
             animate={{
