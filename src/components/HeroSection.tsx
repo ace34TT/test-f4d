@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
       <section
           id={"hero"}
-          className="z-10 flex-grow gap-5  w-full px-5 md:w-6/12 mx-auto flex flex-col items-center justify-center prose max-w-none"
+          className="z-10 flex-grow gap-5 w-full px-5 md:w-8/12 mx-auto flex flex-col items-center justify-center prose max-w-none"
       >
         {/*{isDarkTheme ? (*/}
         {/*    <img*/}
@@ -29,6 +29,7 @@ const HeroSection = () => {
         <AnimatedLogo></AnimatedLogo>
         <h1
             className={
+         "w-full" +
               isDarkTheme
                   ? "text-4xl font-light text-white md:text-6xl text-center"
                   : "text-4xl md:text-6xl font-light text-primary-950 text-center"
@@ -39,14 +40,16 @@ const HeroSection = () => {
           <span className="font-bold">flexibles</span> avec
         </h1>
         <div
-            className={isDarkTheme ? "bg-primary-950 trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
+
+
+        className={isDarkTheme ? "bg-[#050A11] trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
         >
           {isDarkTheme ? (
-              <img src="/images/custom/strapi_next.png" className={"max-w-none w-48"} alt=""/>
+              <img src="/images/custom/strapi_next.png" className={"max-w-none w-56"} alt=""/>
           ) : (
               <img
                   src="/images/custom/light_strapi_next.png"
-                  className={"max-w-none w-48"}
+                  className={"max-w-none w-56"}
                   alt=""
               />
           )}
