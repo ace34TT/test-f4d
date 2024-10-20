@@ -69,7 +69,7 @@ const HeroBgAnimation = React.memo(() => {
           />
           <AnimatedImage
               src="/images/custom/hero_bg/3.png"
-              className={"scale-125 -right-24 absolute top-1/3 transform -translate-y-1/2"}
+              className={"scale-125 hidden sm:block -right-24 absolute top-1/3 transform -translate-y-1/2"}
               animationConfig={{
                 floating: {
                   y: "+=10",
@@ -125,7 +125,7 @@ const HeroBgAnimation = React.memo(() => {
           />
           <AnimatedImage
               src="/images/custom/hero_bg/5.png"
-              className={"hidden md:block right-[250px] absolute top-1/2 transform -translate-y-[300px]"}
+              className={"hidden sm:block right-[250px] absolute top-1/2 transform -translate-y-[300px]"}
               animationConfig={{
                 floating: {
                   y: "+=10",
@@ -152,7 +152,7 @@ const HeroBgAnimation = React.memo(() => {
           />
           <AnimatedImage
               src="/images/custom/hero_bg/6.png"
-              className={"hidden md:block right-[150px] rotate-45 absolute top-1/2 transform -translate-y-1/2"}
+              className={"hidden sm:block right-[150px] rotate-45 absolute top-1/2 transform -translate-y-1/2"}
               animationConfig={{
                 floating: {
                   y: "+=20",

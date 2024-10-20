@@ -9,9 +9,9 @@ import {isMobile} from "react-device-detect";
 const HeroSection = () => {
   const {isDarkTheme} = useTheme();
   return (
-      <section id={"hero"} className=" z-10 flex-grow gap-5 w-full px-5 md:w-11/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center prose max-w-none">
+      <section id={"hero"} className=" z-10 flex-grow gap-5 w-full px-5 md:w-9/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center prose max-w-none">
         <AnimatedLogo></AnimatedLogo>
-        <h1 className={`w-full -mt-8 text-4xl md:text-6xl font-light text-center ${isDarkTheme ? "" : "text-primary-950"}`}>
+        <h1 className={`w-full -mt-8 text-4xl md:text-5xl lg:text-6xl font-light text-center ${isDarkTheme ? "" : "text-primary-950"}`}>
           <span className="font-bold">Solutions</span> de développement <br/>
           <span className="font-bold">rapides</span> et{" "}
           <span className="font-bold">flexibles</span> avec

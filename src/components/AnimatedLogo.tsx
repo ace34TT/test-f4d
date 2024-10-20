@@ -53,7 +53,7 @@ const AnimatedLogo = () => {
   return (
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         {isDarkTheme ?
-            <svg ref={svgRef} id="logodark" className="w-[300px] lg:w-[500px]  lg:h-[360px]  h-[259px] mt-5"
+            <svg ref={svgRef} id="logodark" className="w-[300px] md:w-[600px] lg:w-[500px] h-[259px] md:h-[300px] lg:h-[360px] mt-5"
                  viewBox="100 100 700 450" fill="none"
                  xmlns="http://www.w3.org/2000/svg" overflow="visible">
               <path
@@ -107,7 +107,7 @@ const AnimatedLogo = () => {
                 </linearGradient>
               </defs>
             </svg> :
-            <svg id="logowhite"  ref={svgRef} className="w-[300px] lg:w-[500px]  lg:h-[360px]  h-[259px] mt-5" viewBox="100 100 700 450"
+            <svg id="logowhite"  ref={svgRef} className="w-[300px] md:w-[600px] lg:w-[500px] h-[259px] md:h-[300px] lg:h-[360px] mt-5" viewBox="100 100 700 450"
                  fill="none" xmlns="http://www.w3.org/2000/svg" overflow="visible">
               <path
                   d="M568.677 453.019H680.594C763.583 453.019 830.868 385.686 830.868 302.639C830.868 219.592 763.583 152.259 680.594 152.259H568.677V227.449H680.594C722.032 227.449 755.731 261.172 755.731 302.639C755.731 344.106 722.032 377.829 680.594 377.829H605.456"
