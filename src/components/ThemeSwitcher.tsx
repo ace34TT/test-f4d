@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Context } from "@/lib/ThemeContext";
 import IconMoon from "./icons/IconMoon";
 import IconSun from "./icons/IconSun";
@@ -12,7 +12,13 @@ const ThemeSwitcher: React.FC = () => {
   }
 
   const { isDarkTheme, setIsDarkTheme } = themeContext;
-
+  useEffect(() => {
+    if (isDarkTheme) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkTheme]);
   return (
     <button
       onClick={() => setIsDarkTheme(!isDarkTheme)}

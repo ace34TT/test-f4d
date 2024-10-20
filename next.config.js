@@ -7,25 +7,25 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'flagcdn.com',
                 port: '',
-                pathname: '/**', // Permet d'accepter toutes les images sous ce domaine
+                pathname: '/**', // Permet d'accepter toutes les custom sous ce domaine
             },
             {
                 protocol: 'https',
                 hostname: 'placehold.co',
                 port: '',
-                pathname: '/**', // Permet d'accepter toutes les images sous ce domaine
+                pathname: '/**', // Permet d'accepter toutes les custom sous ce domaine
             },
             {
                 protocol: 'https',
                 hostname: 'weartwice.strapi-pro.com',
                 port: '',
-                pathname: '/**', // Permet d'accepter toutes les images sous ce domaine
+                pathname: '/**', // Permet d'accepter toutes les custom sous ce domaine
             },
             {
                 protocol: 'https',
                 hostname: 'via.placeholder.com',
                 port: '',
-                pathname: '/**', // Permet d'accepter toutes les images sous ce domaine
+                pathname: '/**', // Permet d'accepter toutes les custom sous ce domaine
             },
         ],
     },
