@@ -15,7 +15,7 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={`z-[999999] h-[80px] md:py-[31px] px-[10%] md:px-[81px] flex justify-between items-center relative z-[10] border-b-0   `}
+      className={`z-[999999] h-[80px] md:py-[31px] px-[10%] md:px-[81px] flex justify-between items-center relative border-b-0   `}
     >
       <div
         id="logoFrench4Dev"

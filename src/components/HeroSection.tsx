@@ -3,7 +3,7 @@ import {ImArrowUpRight2} from "react-icons/im";
 import {useTheme} from "@/lib/ThemeContext";
 import AnimatedLogo from "@/components/AnimatedLogo";
 import {BorderTrail} from "@/components/BorderTrail";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 const HeroSection = () => {
   const {isDarkTheme} = useTheme();
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <AnimatedLogo></AnimatedLogo>
         <h1
             className={
-         "w-full" +
+              "w-full" +
               isDarkTheme
                   ? "text-4xl font-light text-white md:text-6xl text-center"
                   : "text-4xl md:text-6xl font-light text-primary-950 text-center"
@@ -40,9 +40,7 @@ const HeroSection = () => {
           <span className="font-bold">flexibles</span> avec
         </h1>
         <div
-
-
-        className={isDarkTheme ? "bg-[#070917] trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
+            className={isDarkTheme ? "bg-[#070917] trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
         >
           {isDarkTheme ? (
               <img src="/images/custom/strapi_next.png" className={"max-w-none w-56"} alt=""/>
@@ -55,7 +53,7 @@ const HeroSection = () => {
           )}
           {/* Animated border trail */}
           <motion.div
-              className={  "blur-md bg-accent-600 absolute top-0 left-0 h-full w-full border-2 border-accent-700 rounded-2xl"}
+              className={"blur-md bg-accent-600 absolute top-0 left-0 h-full w-full border-2 border-accent-700 rounded-2xl"}
               initial={{x: 0, y: 0}}
               animate={{
                 x: [0, 7, 0, -7, 0],
