@@ -37,13 +37,13 @@ const AnimatedImage: React.FC<AnimatedImageProps> = ({
       ...animationConfig.toB,
       onComplete: () => {
         // Pause at position B
-        gsap.delayedCall(1, () => {
+        gsap.delayedCall(3, () => {
           // Move back to position A
           gsap.to(animatedImageRef.current, {
             ...animationConfig.toA,
             onComplete: () => {
               // Pause at position A
-              gsap.delayedCall(1, animateImage); // Restart the animation after the pause
+              gsap.delayedCall(3, animateImage); // Restart the animation after the pause
             },
           });
         });

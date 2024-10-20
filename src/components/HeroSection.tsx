@@ -1,29 +1,32 @@
 import React from "react";
-import { ImArrowUpRight2 } from "react-icons/im";
-import { useTheme } from "@/lib/ThemeContext";
+import {ImArrowUpRight2} from "react-icons/im";
+import {useTheme} from "@/lib/ThemeContext";
+import AnimatedLogo from "@/components/AnimatedLogo";
+import {BorderTrail} from "@/components/BorderTrail";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const { isDarkTheme } = useTheme();
+  const {isDarkTheme} = useTheme();
   return (
       <section
           id={"hero"}
           className="z-10 flex-grow gap-5  w-full px-5 md:w-6/12 mx-auto flex flex-col items-center justify-center prose max-w-none"
       >
-        {isDarkTheme ? (
-            <img
-                src="/images/custom/animated-logo.svg"
-                alt=""
-                className={"w-7/12 m-0"}
-            />
-        ) : (
-            <img
-                src="/images/custom/light_logo.svg"
-                alt=""
-                className={"w-7/12 m-0"}
-            />
-        )}
+        {/*{isDarkTheme ? (*/}
+        {/*    <img*/}
+        {/*        src="/images/custom/animated-logo.svg"*/}
+        {/*        alt=""*/}
+        {/*        className={"w-7/12 m-0"}*/}
+        {/*    />*/}
+        {/*) : (*/}
+        {/*    <img*/}
+        {/*        src="/images/custom/light_logo.svg"*/}
+        {/*        alt=""*/}
+        {/*        className={"w-7/12 m-0"}*/}
+        {/*    />*/}
+        {/*)}*/}
 
-        {/*<AnimatedLogo></AnimatedLogo>*/}
+        <AnimatedLogo></AnimatedLogo>
         <h1
             className={
               isDarkTheme
@@ -35,7 +38,9 @@ const HeroSection = () => {
           <span className="font-bold">rapides</span> et{" "}
           <span className="font-bold">flexibles</span> avec
         </h1>
-        <div className={"border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-3"}>
+        <div
+            className={isDarkTheme ? "bg-primary-950 trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border" : "bg-white trailing_border relative border-2 border-accent-700 px-10 md:px-40 w-fit rounded-2xl my-4 py-4 trailing-border"}
+        >
           {isDarkTheme ? (
               <img src="/images/custom/strapi_next.png" className={"max-w-none w-48"} alt=""/>
           ) : (
@@ -45,9 +50,18 @@ const HeroSection = () => {
                   alt=""
               />
           )}
+          {/* Animated border trail */}
+          <motion.div
+              className={  "blur-md bg-accent-600 absolute top-0 left-0 h-full w-full border-2 border-accent-700 rounded-2xl"}
+              initial={{x: 0, y: 0}}
+              animate={{
+                x: [0, 7, 0, -7, 0],
+                y: [0, 7, -7, 0, 0],
+                transition: {duration: 5, repeat: Infinity, ease: "easeInOut"},
+              }}
+              style={{zIndex: -1}}
+          />
         </div>
-
-
         <p
             className={
               isDarkTheme
